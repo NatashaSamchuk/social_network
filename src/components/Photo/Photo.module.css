@@ -1,0 +1,41 @@
+.imgBackground{
+    width: 90%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 5%;
+}
+
+.imgBackground img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo{
+    position: relative;
+}
+
+.fase{
+    position: absolute;
+    top: 70px;
+    /* left: 150px; */
+    left: 7%;
+    width: 250px;
+}
+
+.fase img{
+    width: 100%;
+}
+
+h1{
+    position: absolute;
+    left: 450px;
+    /* left: 30%; */
+    top: 220px;
+    color: white;
+}

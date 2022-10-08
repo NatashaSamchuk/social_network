@@ -1,0 +1,11 @@
+.header{
+    background-color: #69a0ff;
+    height: 50px;
+    color: white;
+    font-size: 25px;
+    display: flex;
+}
+
+.header .logo{
+    height: 90%;
+}

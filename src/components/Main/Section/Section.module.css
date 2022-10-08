@@ -1,0 +1,10 @@
+.section{
+    font-size: 25px;
+    background-color: rgb(204, 252, 204);
+    padding: 10px 0 0 10px;
+    width: 75%;
+}
+
+.section textarea{
+    margin-top: 30px;
+}

@@ -1,0 +1,31 @@
+.info{
+    background-color: lemonchiffon;
+    font-size: 18px;
+    width: 25%;
+    margin-right: 10px;
+    padding-left: 15px;
+}
+
+.info h2{
+    margin-bottom: 10px;
+}
+
+.icon{
+    width: 30px;
+    margin-top: 6px;
+}
+
+
+.icon img{
+    width: 100%;
+}
+
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flexContainer p{
+    margin: 12px 0 12px 7px;
+}

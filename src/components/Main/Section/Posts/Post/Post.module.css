@@ -1,0 +1,12 @@
+.post{
+    display: flex;
+}
+
+.post img{
+    width: 40px;
+    height: 40px;
+}
+
+.post p{
+    margin: 10px 0;
+}
