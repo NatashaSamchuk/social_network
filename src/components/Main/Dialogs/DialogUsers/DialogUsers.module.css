@@ -1,4 +1,36 @@
-.active{
-    /* border: red solid 1px; */
+.dialogUsersContainer .active{
     background-color: lightcyan;
+}
+
+.dialogUsersContainer{
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    align-items: center;
+    margin: 10px 0 0 15px;
+}
+
+.dialogUsersContainer .userFotoContainer{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 35px;
+}
+
+.dialogUsersContainer .userFotoContainer img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    object-fit: cover;
+}
+
+.dialogUsersContainer a{
+    display: block;
+    margin: 6px 0 0 20px;
+    text-decoration: none;
+    color: black;
+    padding: 6px 5px;
 }

@@ -1,12 +1,74 @@
 .post{
-    display: flex;
+    display: grid;
+    grid-auto-columns: 70px 1fr;
+    gap: 25px;
+    grid-auto-flow: column;
+    margin-bottom: 20px;
 }
 
-.post img{
+.post .imgFotoContainer{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 35px;
+    align-self: center;
+    transition: width 1s, height 1s, border-radius 1s;
+}
+
+.post .imgFotoContainer:hover{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+.post .imgFotoContainer img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    object-fit: cover;
+}
+
+.post .postItemContainer{
+    display: grid;
+    grid-template-columns: 1fr 70px;
+    background-color: rgb(166, 247, 166);
+    border-radius: 20px;
+    min-height: 80px;
+}
+
+.post .postItemContainer p{
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.post .postItemContainer button img{
+    width: 25px;
+    margin-right: 3px;
+    transition: width 0.5s;
+    position: absolute;
+    left: 5px;
+    top: 6px;
+}
+
+.post .postItemContainer button img:hover{
     width: 40px;
-    height: 40px;
+    left:2px;
+    top:2px;
 }
 
-.post p{
-    margin: 10px 0;
+.post .postItemContainer button{
+    font-size: 17px;
+    text-align: end;
+    border-radius: 19px;
+    height: 40px;
+    border: solid 1px darkgrey;
+    align-self: end;
+    margin: 0 10px 10px 0;
+    min-width: 58px;
+    position: relative;
+    background-color: rgb(204, 252, 204);
 }

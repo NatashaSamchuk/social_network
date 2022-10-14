@@ -2,28 +2,35 @@
     font-size: 18px;
     background-color: lightcyan ;
     width: 85%;
-    display: flex;
-    flex-direction: row;
-    /* padding: 10px 0 0 10px; */
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    display: grid;
+    grid-template-columns: minmax(200px, 15%) minmax(650px, 75%);
 }
 
 .dialogs .dialogUsers{
-    width: 15%;
+    /*width: 15%;*/
     background-color: rgb(170, 255, 255);
+    padding-bottom: 15px;
 }
-
-.dialogs .dialogUsers a{
-    /* margin-top: 15px; */
-    display: block;
-    margin: 6px 0 0 20px;
-    /* margin-left: 20px; */
-    text-decoration: none;
-    color: black;
-    padding: 6px 5px;
-}
-
 
 .dialogs .messages{
-    width: 75%;
+    /*width: 75%;*/
     padding: 0 0 0 10px;
+}
+
+.dialogs .messages textarea{
+    margin: 30px 0 30px 30%;
+    font-size: 18px;
+    width: 45%;
+    border-radius: 13px;
+}
+
+.dialogs .messages button{
+    font-size: 14px;
+    background-color: rgb(170, 255, 255);
+    border: lightgrey solid 1px;
+    padding: 7px;
+    border-radius: 13px;
+    margin-bottom: 20px;
 }

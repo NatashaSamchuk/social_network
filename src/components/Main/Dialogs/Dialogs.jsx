@@ -2,24 +2,36 @@ import React from "react";
 import style from './Dialogs.module.css';
 import Message from "./Messages/Message";
 import DialogUsers from "./DialogUsers/DialogUsers";
+import {
+    addMessageActionCreator,
+    updateNewMessageTextActionCreator
+} from "../../../Redux/state";
 
-let dialogs = [{id: 1, name: "Vanya"},
-{id: 2, name: "Tanya"},
-{id: 3, name: "Danya"},
-{id: 4, name: "Sanya"},
-{id: 5, name: "Tanya"}];
+const Dialogs = (props) => {
+    // console.log(props)
+    let messagesItem = props.messagesAndDialogs.messages.map(item => <Message message = {item.message} time = {item.time} src = {item.src} />);
+    let dialogsItem = props.messagesAndDialogs.dialogs.map(item => <DialogUsers name = {item.name} id = {item.key} src = {item.src}/>);
 
+    // let newMessage = React.createRef();
 
-let dialogsItem = dialogs.map(item => <DialogUsers name = {item.name} id = {item.id}/>);
+    // let addMessage = () => {
+    //     let text = newMessage.current.value;
+    //     alert(text);
+    // }
 
-let messages = [{id: 1, message: "Hi!", time: "01.09.22 10:50", src: "https://static-cdn5.vigbo.tech/u14829/17548/blog/3921425/2551310/32066975/1000-yana_tkachenko-5303025f47b40c1898e6402b3b9b81df.jpg"},
-{id: 2, message: "How are you?", time: "01.09.22 10:51", src: "https://static-cdn5.vigbo.tech/u14829/17548/blog/3921425/2551310/32066975/1000-yana_tkachenko-5303025f47b40c1898e6402b3b9b81df.jpg"},
-{id: 3, message: "Thanks, everything is fine.", time: "01.09.22 10:57", src: "https://static-cdn5.vigbo.tech/u14829/17548/blog/1601759/262700/9885341/500-d897fa6ebb368c73c659bbb8c4fceeef.jpg"},
-{id: 4, message: "See you today at 12:00?", time: "01.09.22 10:59", src: "https://static-cdn5.vigbo.tech/u14829/17548/blog/3921425/2551310/32066975/1000-yana_tkachenko-5303025f47b40c1898e6402b3b9b81df.jpg"}];
+    let newMessageItem = React.createRef();
 
-let messagesItem = messages.map(item => <Message message = {item.message} time = {item.time} src = {item.src} />);
+    let addMessage = () => {
+        newMessageItem.current.value = "";
+        props.dispatchMessage(addMessageActionCreator());
+    }
 
-const Dialogs = () => {
+    let onMessageChange = () => {
+        let text = newMessageItem.current.value;
+        props.dispatchMessage(updateNewMessageTextActionCreator(text));
+        // console.log(text);
+    }
+
     return(
         <div className={style.dialogs}>
             <div className={style.dialogUsers}>
@@ -27,6 +39,8 @@ const Dialogs = () => {
             </div>
             <div className={style.messages}>
                 {messagesItem}
+                <textarea ref={newMessageItem} onChange={onMessageChange} value={props.newMessageText}></textarea>
+                <button onClick={addMessage}>Add message</button>
             </div>
         </div>
     )
