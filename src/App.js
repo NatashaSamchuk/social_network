@@ -13,18 +13,22 @@ import {Routes, Route} from "react-router-dom";
 function App(props) {
 
   return (
-      // <BrowserRouter>
         <div className="wraper">
           <Header/>
           <Photo/>
           <Nav/>
           <div className='container'>
             <Main>
-              <Info info={props.stateApp._state.infoPage}/>
+              <Info info={props.state.infoPage}/>
               <Routes>
-                <Route exact path="/social_network" element = {<Section posts={props.stateApp._state.postsPage.posts} store={props.store} dispatch={props.dispatch}/>}/>
-                <Route path="/profile" element = {<Section posts={props.stateApp._state.postsPage.posts} store={props.store} dispatch={props.dispatch}/>}/>
-                <Route exact path="/dialogs/*" element = {<Dialogs messagesAndDialogs={props.stateApp._state.dialogsPage} dispatch={props.dispatch}/>}/>
+                <Route exact path="/social_network" element = {<Section posts={props.state.postsPage.posts}
+                                                                        // store={props.store}
+                                                                        dispatch={props.dispatch}/>}/>
+                <Route path="/profile" element = {<Section posts={props.state.postsPage.posts}
+                                                           // store={props.store}
+                                                           dispatch={props.dispatch}/>}/>
+                <Route exact path="/dialogs/*" element = {<Dialogs messagesAndDialogs={props.state.dialogsPage}
+                                                                   dispatch={props.dispatch}/>}/>
                 <Route path="/videos" element = {<Videos/>}/>
                 {/* <Route path="/fotos" element = {<Fotos/>}/>
               <Route path="/friends" element = {<Friends/>}/> */}
@@ -33,7 +37,6 @@ function App(props) {
           </div>
           <Footer/>
         </div>
-      // </BrowserRouter>
   );
 }
 
