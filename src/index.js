@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 let renderedDOM = (state) =>{
     root.render(
         <BrowserRouter>
-            <App state={state} stateApp={store} dispatch={store.dispatch.bind(store)} dispatchMessage={store.dispatchMessage.bind(store)}/>
+            <App state={state} stateApp={store} dispatch={store.dispatch.bind(store)} dispatchMessage={store.dispatch.bind(store)}/>
         </BrowserRouter>
     );
 }
