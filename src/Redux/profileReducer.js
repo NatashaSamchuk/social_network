@@ -42,8 +42,10 @@ let initialState =  {
         {key: 2, post: "Generally defined as \"websites that facilitate the building of a network of contacts in order to exchange various types of content online,\" social networking sites provide a space for interaction to continue beyond in-person interactions. ", likeCount: 5},
         {key: 1, post: "These computer mediated interactions link members of various networks and may help to create, sustain and develop new social and professional relationships.", likeCount: 11}
     ],
-    newPostText: 'new post text'
+    newPostText: ''
 }
+
+
 
 const profileReducer = (state = initialState, action) => {
 
@@ -54,8 +56,10 @@ const profileReducer = (state = initialState, action) => {
                 post: state.newPostText,
                 likeCount: 0
             };
-            state.posts.unshift(newPost);
+
             state.newPostText = '';
+
+            state.posts.unshift(newPost);
             return state;
         case UPDATE_NEW_POST_TEXT:
             state.newPostText = action.newText;
@@ -75,5 +79,7 @@ export const updateNewPostTextActionCreator = (text) => {
         newText: text
     }
 }
+
+
 
 export default profileReducer;

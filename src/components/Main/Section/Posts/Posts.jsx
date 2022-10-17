@@ -6,10 +6,28 @@ import Post from "./Post/Post";
 
 
 const Posts = (props) => {
-    // console.log(props);
-    let postItem = props.posts.map(item => <Post post={item.post} likes = {item.likeCount}/>);
+    // console.log(props.newPostText)
+    // let newPostItem = React.createRef();
+    // let newPostText = props.newPostText;
+    // console.log(newPostText)
+
+    let addPost = () => {
+        // newPostItem.current.value = "";
+        props.addPost();
+    }
+
+    let onPostChange = (e) => {
+        let text = e.target.value;
+        // console.log(text)
+        props.updateNewPostText(text);
+
+    }
+
+    let postItem = props.posts.posts.map(item => <Post post={item.post} likes = {item.likeCount}/>);
     return(
         <div className={style.posts}>
+            <textarea placeholder='send post' onChange={onPostChange} ></textarea>
+            <button onClick={addPost}>Add post</button>
             {postItem}
         </div>
     )

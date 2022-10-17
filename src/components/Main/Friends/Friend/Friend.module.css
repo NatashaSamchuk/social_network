@@ -1,0 +1,107 @@
+.friend{
+        width: 280px;
+        background-color: white;
+        border-radius: 15px;
+        margin: 5px 10px;
+        display: inline-block;
+        /*position: relative;*/
+}
+
+.friend .frendCard{
+        position: relative;
+        margin-bottom: 20px;
+}
+
+.friend .frendCard .friendBackgroundImg{
+        width: 100%;
+        height: 150px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px 15px 0 0;
+}
+
+.friend .frendCard .friendBackgroundImg img{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 100%;
+        object-fit: cover;
+}
+
+.friend .frendCard .friendFoto{
+        position: absolute;
+        left: 12px;
+        top: 75px;
+        width: 84px;
+}
+
+.friend .frendCard .friendFoto .positionFoto{
+        width: 100%;
+        height: 84px;
+        position: relative;
+        overflow: hidden;
+}
+
+.friend .frendCard .friendFoto .positionFoto img{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 100%;
+        object-fit: cover;
+}
+
+.friend .frendCard h4{
+        color: white;
+        position: absolute;
+        left: 110px;
+        top: 75px;
+}
+
+.friend .frendCard p{
+        /*color: white;*/
+        position: absolute;
+        left: 110px;
+        top: 135px;
+        font-style: italic;
+        font-size: 16px;
+}
+
+.friend span{
+        font-size: 17px;
+        display: block;
+        margin-left: 10px;
+        margin-top: 3px;
+        text-align: left;
+}
+
+.friend a{
+        color: #69a0ff;
+        text-decoration: none;
+        font-size: 22px;
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+}
+
+
+/*.message .imgContainer{*/
+/*    width: 70px;*/
+/*    height: 70px;*/
+/*    position: relative;*/
+/*    overflow: hidden;*/
+/*    border-radius: 35px;*/
+/*}*/
+
+/*.message .imgContainer img{*/
+/*    width: 100%;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%,-50%);*/
+/*    height: 100%;*/
+/*    object-fit: cover;*/
+/*}*/
