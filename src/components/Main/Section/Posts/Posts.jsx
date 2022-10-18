@@ -23,7 +23,7 @@ const Posts = (props) => {
 
     }
 
-    let postItem = props.posts.map(item => <Post post={item.post} likes = {item.likeCount}/>);
+    let postItem = props.posts.map(item => <Post key = {item.key} post={item.post} likes = {item.likeCount}/>);
     return(
         <div className={style.posts}>
             <textarea placeholder='send post'

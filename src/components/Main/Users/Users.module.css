@@ -1,0 +1,18 @@
+.usersWrapper {
+    width: 100%;
+    padding: 30px;
+    background-color: lightgreen;
+}
+.User {
+    display: flex;
+    margin: 10px;
+}
+
+.User div {
+    margin-left: 20px;
+}
+
+.User button {
+    height: 40px;
+    margin-left: 30px;
+}

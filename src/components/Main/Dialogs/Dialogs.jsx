@@ -7,8 +7,8 @@ import DialogUsers from "./DialogUsers/DialogUsers";
 
 const Dialogs = (props) => {
 
-    let messagesItem = props.dialogsPage.messages.map(item => <Message message = {item.message} time = {item.time} src = {item.src} />);
-    let dialogsItem = props.dialogsPage.dialogs.map(item => <DialogUsers name = {item.name} id = {item.key} src = {item.src}/>);
+    let messagesItem = props.dialogsPage.messages.map(item => <Message key = {item.key} message = {item.message} time = {item.time} src = {item.src} />);
+    let dialogsItem = props.dialogsPage.dialogs.map(item => <DialogUsers key = {item.key} name = {item.name} id = {item.key} src = {item.src}/>);
     let newMessageBody = props.dialogsPage.newMessageBody;
 
 
