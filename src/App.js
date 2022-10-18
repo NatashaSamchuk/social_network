@@ -5,11 +5,11 @@ import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import Nav from "./components/Nav/Nav";
 // import Section from "./components/Main/Section/Section";
-import Videos from "./components/Main/Videos/Videos";
+// import Videos from "./components/Main/Videos/Videos";
 import Photo from "./components/Photo/Photo";
 // import Info from "./components/Main/Info/Info"
 import {Routes, Route} from "react-router-dom";
-import Friends from "./components/Main/Friends/Friends";
+// import Friends from "./components/Main/Friends/Friends";
 import DialogsContainer from "./components/Main/Dialogs/DialogsContainer";
 import InfoContainer from "./components/Main/Info/InfoContainer";
 import FriendsContainer from "./components/Main/Friends/FriendsContainer";
@@ -29,7 +29,7 @@ function App(props) {
                 <Route exact path="/social_network" element = {<Section />}/>
                 <Route path="/profile" element = {<Section />}/>
                 <Route exact path="/dialogs/*" element = {<DialogsContainer />}/>
-                <Route path="/videos" element = {<Videos/>}/>
+                {/*<Route path="/videos" element = {<Videos/>}/>*/}
                 {/*<Route path="/fotos" element = {<Fotos/>}/>*/}
                 <Route path="/friends" element = {<FriendsContainer/>}/>
               </Routes>

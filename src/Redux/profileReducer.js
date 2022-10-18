@@ -1,38 +1,6 @@
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
 
-// const profileReducer = (state, action) => {
-//
-//     switch (action.type) {
-//         case ADD_POST:
-//             let newPost = {
-//                 key: state.posts.length + 1,
-//                 post: state.newPostText,
-//                 likeCount: 0
-//             };
-//             state.posts.unshift(newPost);
-//             state.newPostText = '';
-//             return state;
-//         case UPDATE_NEW_POST_TEXT:
-//             state.newPostText = action.newText;
-//             return state;
-//         default:
-//             return state;
-//     }
-// }
-// export const addPostActionCreator = () => {
-//     return {
-//         type: ADD_POST
-//     }
-// }
-// export const updateNewPostTextActionCreator = (text) => {
-//     return {
-//         type: UPDATE_NEW_POST_TEXT,
-//         newText: text
-//     }
-// }
-//
-// export default profileReducer;
 
 let initialState =  {
     posts:[
@@ -51,19 +19,27 @@ const profileReducer = (state = initialState, action) => {
 
     switch (action.type) {
         case ADD_POST:
+            console.log(state)
             let newPost = {
                 key: state.posts.length + 1,
                 post: state.newPostText,
                 likeCount: 0
             };
 
-            state.newPostText = '';
+            // state.newPostText = '';
 
-            state.posts.unshift(newPost);
-            return state;
+            // state.posts.unshift(newPost);
+            return {
+                ...state,
+                posts: [newPost, ...state.posts],
+                newPostText: ''
+            };
         case UPDATE_NEW_POST_TEXT:
-            state.newPostText = action.newText;
-            return state;
+            // state.newPostText = action.newText;
+            return {
+                ...state,
+                newPostText: action.newText
+            };
         default:
             return state;
     }

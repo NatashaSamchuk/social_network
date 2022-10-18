@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import {connect} from "react-redux";
 // import Section from "./Section";
 // import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../Redux/profileReducer";
@@ -9,9 +9,9 @@ import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../../
 
 let mapStateToProps = (state) => {
     return {
-        // posts: state.postsPage.posts,
-        // newPostText: state.postsPage.newPostText
-        posts: state.postsPage,
+        posts: state.postsPage.posts,
+        newPostText: state.postsPage.newPostText
+        // posts: state.postsPage,
     }
 }
 let mapDispatchToProps = (dispatch) => {

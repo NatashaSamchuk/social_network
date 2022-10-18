@@ -10,22 +10,27 @@ import {Provider} from "react-redux";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-let rerenderDOM = (state) =>{
-    root.render(
-        <BrowserRouter>
-            <Provider store={store}>
-                <App />
-            </Provider>
-        </BrowserRouter>
-    );
-}
+root.render(
+    <BrowserRouter>
+        <Provider store={store}>
+            <App/>
+        </Provider>
+    </BrowserRouter>)
 
-// renderedDOM(store.getState());
-// store.subscribe(renderedDOM);
-
-rerenderDOM(store.getState());
-
-store.subscribe(() => {
-    let state = store.getState();
-    rerenderDOM(state)
-});
+// let rerenderDOM = (state) =>{
+//     root.render(
+//         <BrowserRouter>
+//             <Provider store={store}>
+//                 <App />
+//             </Provider>
+//         </BrowserRouter>
+//     );
+// }
+//
+//
+// rerenderDOM(store.getState());
+//
+// store.subscribe(() => {
+//     let state = store.getState();
+//     rerenderDOM(state)
+// });

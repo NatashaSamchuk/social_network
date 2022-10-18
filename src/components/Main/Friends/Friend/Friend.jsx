@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 
 // background = {element.background} foto = {element.foto} name = {element.name} from = {element.from} friends = {element.friends}
 const Friend = (props) => {
-    let path = "/friends/" + props.name;
+    let path = "/dialogs/" + props.name;
     // console.log(props)
     return (
         <div className={style.friend}>
