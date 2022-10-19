@@ -1,11 +1,11 @@
 .dialogs{
     font-size: 18px;
     background-color: lightcyan ;
-    width: 85%;
+    width: 75%;
     /*display: flex;*/
     /*flex-direction: row;*/
     display: grid;
-    grid-template-columns: minmax(200px, 15%) minmax(650px, 75%);
+    grid-template-columns: minmax(200px, 15%) minmax(450px, 75%);
 }
 
 .dialogs .dialogUsers{

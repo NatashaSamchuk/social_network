@@ -1,18 +1,38 @@
-.usersWrapper {
-    width: 100%;
-    padding: 30px;
-    background-color: lightgreen;
-}
-.User {
+.user {
     display: flex;
-    margin: 10px;
+    margin: 2% 10%;
+    background-color: #ffc8d2;
+    padding: 10px;
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.User div {
+.user .userImgContainer{
     margin-left: 20px;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 35px;
 }
 
-.User button {
+.user .userImgContainer img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    object-fit: cover;
+}
+
+.user button {
     height: 40px;
-    margin-left: 30px;
+    font-size: 14px;
+    background-color: lavenderblush;
+    border: lightgrey solid 1px;
+    padding: 7px;
+    border-radius: 13px;
+    width: 70px;
 }

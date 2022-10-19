@@ -1,7 +1,7 @@
 import React from "react";
 import style from './Post.module.css';
 // import img from '../../img/beach.jpg'
-import heart from '../../img/heart.png'
+import heart from '../../../../../assets/heart.png'
 
 const Post = (props) => {
     return (

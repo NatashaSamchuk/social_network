@@ -1,16 +1,11 @@
 import React from "react";
 import {connect} from "react-redux";
-// import Message from "./Message/Message";
-// import {sendMessageCreator, updateNewMessageBodyCreator} from "../../../Redux/dialogsReducer";
-// import Dialogs from "./Dialogs";
-// import StoreContext from "../../../StoreContext";
-import Friends from "./Friends";
+import Photo from "./Photo";
 
 
 let mapStateToProps = (state) => {
     return {
-        // friendsPage : state.friendsPage
-        usersPage: state.usersPage
+        photoPage: state.photoPage
     }
 }
 // let mapDispatchToProps = (dispatch) => {
@@ -25,6 +20,6 @@ let mapStateToProps = (state) => {
 //     }
 // }
 
-const FriendsContainer = connect(mapStateToProps)(Friends)
+const PhotoContainer = connect(mapStateToProps)(Photo)
 
-export default FriendsContainer;
+export default PhotoContainer;

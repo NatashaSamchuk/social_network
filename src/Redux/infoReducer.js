@@ -1,8 +1,8 @@
-import globe from "../components/Main/Info/img/globe.png";
-import marker from "../components/Main/Info/img/marker.png";
-import cap from "../components/Main/Info/img/cap.png";
-import gift from "../components/Main/Info/img/gift.png";
-import at from "../components/Main/Info/img/at.png";
+import globe from "../assets/globe.png";
+import marker from "../assets/marker.png";
+import cap from "../assets/cap.png";
+import gift from "../assets/gift.png";
+import at from "../assets/at.png";
 
 let initialState = {
     info:[

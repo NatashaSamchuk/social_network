@@ -2,17 +2,20 @@ import React from "react";
 import style from './User.module.css';
 
 let User = (props) => {
+    // console.log(props.id)
     return (
         <div className={style.usersWrapper}>
             <div className={style.user}>
-                <img src={props.foto} alt="photo"/>
+                <div className={style.userImgContainer}>
+                    <img src={props.foto} alt="photo"/>
+                </div>
                 <div>{props.name}</div>
                 <div>{props.followed}</div>
                 <div>{props.from}</div>
                 <div>
                     {props.followed
-                        ? <button onClick={() => {props.followUser(props.key)}}>Unfollow</button>
-                        : <button onClick={() => {props.unfollowUser(props.key)}}>Follow</button>
+                        ? <button onClick={() => {props.followUser(props.id)}}>Unfollow</button>
+                        : <button onClick={() => {props.unfollowUser(props.id)}}>Follow</button>
                     }
                 </div>
 
