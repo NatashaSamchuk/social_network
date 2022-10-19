@@ -1,10 +1,17 @@
 {
   "files": {
-    "main.css": "/social_network/static/css/main.a23f9945.css",
-    "main.js": "/social_network/static/js/main.7821aff7.js",
-    "static/media/beach.jpg": "/social_network/static/media/beach.503fe3acdab6ac43fc71.jpg",
-    "static/media/yana.jpg": "/social_network/static/media/yana.56c9d77de58fedbb42b3.jpg",
+    "main.css": "/social_network/static/css/main.4df1b146.css",
+    "main.js": "/social_network/static/js/main.ae6d9216.js",
+    "static/media/background3.jpg": "/social_network/static/media/background3.4b81584e2c6f25cbdc4c.jpg",
+    "static/media/background1.jpg": "/social_network/static/media/background1.2cc63ead324250cffd5c.jpg",
+    "static/media/background4.jpg": "/social_network/static/media/background4.1c0c82a4db85268ca163.jpg",
+    "static/media/myBackground.jpg": "/social_network/static/media/myBackground.503fe3acdab6ac43fc71.jpg",
+    "static/media/background2.webp": "/social_network/static/media/background2.e4f64cddfb93708c4448.webp",
+    "static/media/user7b.jpg": "/social_network/static/media/user7b.cce65752eb7d7fc012e8.jpg",
+    "static/media/user8g.webp": "/social_network/static/media/user8g.c1bdbd1f606e291d8f1a.webp",
+    "static/media/myPhoto.jpg": "/social_network/static/media/myPhoto.56c9d77de58fedbb42b3.jpg",
     "static/media/globe.png": "/social_network/static/media/globe.40681081699280846739.png",
+    "static/media/user9b.jpg": "/social_network/static/media/user9b.c0788c6d8b6fd6636719.jpg",
     "static/media/at.png": "/social_network/static/media/at.d5bed4e688a89b2f41f3.png",
     "static/media/marker.png": "/social_network/static/media/marker.4f0a00736de7aed9cfb7.png",
     "static/media/heart.png": "/social_network/static/media/heart.6e7712983706830994b1.png",
@@ -12,11 +19,11 @@
     "static/media/gift.png": "/social_network/static/media/gift.db5eefa06923f0d740ff.png",
     "static/media/logo.png": "/social_network/static/media/logo.d2dde17f286bc69701dd.png",
     "index.html": "/social_network/index.html",
-    "main.a23f9945.css.map": "/social_network/static/css/main.a23f9945.css.map",
-    "main.7821aff7.js.map": "/social_network/static/js/main.7821aff7.js.map"
+    "main.4df1b146.css.map": "/social_network/static/css/main.4df1b146.css.map",
+    "main.ae6d9216.js.map": "/social_network/static/js/main.ae6d9216.js.map"
   },
   "entrypoints": [
-    "static/css/main.a23f9945.css",
-    "static/js/main.7821aff7.js"
+    "static/css/main.4df1b146.css",
+    "static/js/main.ae6d9216.js"
   ]
 }
