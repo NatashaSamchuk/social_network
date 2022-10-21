@@ -3,7 +3,7 @@ import style from './DialogUsers.module.css';
 import {NavLink} from "react-router-dom";
 
 const DialogUsers = (props) => {
-    let path = "/dialogs/" + props.id;
+    let path = "/social_network/dialogs/" + "user" + props.id;
     return(
         <div className={style.dialogUsersContainer}>
             <div className={style.userFotoContainer}>

@@ -21,7 +21,7 @@ const SET_USERS = 'SET_USERS';
 let initialState = {
     users: [
         {
-            key: 1,
+            id: 1,
             background: background1,
             foto: user1,
             name: "Masha",
@@ -32,7 +32,7 @@ let initialState = {
             friends: 12
         },
         {
-            key: 2,
+            id: 2,
             background: background2,
             foto: user2,
             name: "Tanya",
@@ -43,7 +43,7 @@ let initialState = {
             friends: 14
         },
         {
-            key: 3,
+            id: 3,
             background: background4,
             foto: user3,
             name: "Vanya",
@@ -54,7 +54,7 @@ let initialState = {
             friends: 8
         },
         {
-            key: 4,
+            id: 4,
             background: background1,
             foto: user4,
             name: "Danya",
@@ -65,7 +65,7 @@ let initialState = {
             friends: 60
         },
         {
-            key: 5,
+            id: 5,
             background: background5,
             foto: user5,
             name: "Sara",
@@ -76,7 +76,7 @@ let initialState = {
             friends: 12
         },
         {
-            key: 6,
+            id: 6,
             background: background3,
             foto: user6,
             name: "Sasha",
@@ -87,7 +87,7 @@ let initialState = {
             friends: 82
         },
         {
-            key: 7,
+            id: 7,
             background: background2,
             foto: user7,
             name: "Seva",
@@ -98,7 +98,7 @@ let initialState = {
             friends: 2
         },
         {
-            key: 8,
+            id: 8,
             background: background5,
             foto: user8,
             name: "Ira",
@@ -109,7 +109,7 @@ let initialState = {
             friends: 10
         },
         {
-            key: 9,
+            id: 9,
             background: background3,
             foto: user9,
             name: "Alex",
@@ -120,7 +120,7 @@ let initialState = {
             friends: 2
         },
         {
-            key: 10,
+            id: 10,
             background: background4,
             foto: user10,
             name: "Vitya",
@@ -129,7 +129,7 @@ let initialState = {
             numberFoto: 10,
             numberVideo: 19,
             friends: 19
-        },
+        }
     ]
 };
 
@@ -139,7 +139,7 @@ const usersReducer = (state = initialState, action) => {
             return {
                 ...state,
                 users: state.users.map(user => {
-                    if (user.key === action.userId) {
+                    if (user.id === action.userId) {
                         return {...user, followed: false}
                     }
                     return user;
@@ -149,7 +149,7 @@ const usersReducer = (state = initialState, action) => {
             return {
                 ...state,
                 users: state.users.map(user => {
-                    if (user.key === action.userId) {
+                    if (user.id === action.userId) {
                         return {...user, followed: true}
                     }
                     return user;

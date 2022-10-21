@@ -84,9 +84,9 @@ let Users = (props) => {
     // }
 
 
-    let userItem = props.users.map(user => <User  id = {user.key} foto = {user.foto}
+    let userItem = props.users.map(user => <User  id = {user.id} foto = {user.foto}
                                                   name = {user.name} from = {user.from}
-                                                  followed ={user.followed} key = {user.key}
+                                                  followed ={user.followed} key = {user.id}
                                                   unfollowUser ={props.unfollowUser}
                                                   followUser = {props.followUser}/>)
     return (

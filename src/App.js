@@ -24,12 +24,12 @@ function App(props) {
               <InfoContainer/>
               <Routes>
                   <Route exact path="/social_network" element = {<Section />}/>
-                  <Route path="/profile" element = {<Section />}/>
-                  <Route exact path="/dialogs/*" element = {<DialogsContainer />}/>
+                  <Route path="/social_network/profile" element = {<Section />}/>
+                  <Route exact path="/social_network/dialogs/*" element = {<DialogsContainer />}/>
                 {/*<Route path="/videos" element = {<Videos/>}/>*/}
                 {/*<Route path="/photos" element = {<Fotos/>}/>*/}
-                  <Route path="/friends" element = {<FriendsContainer/>}/>
-                  <Route path='/users' element={<UsersContainer />}/>
+                  <Route path="/social_network/friends" element = {<FriendsContainer/>}/>
+                  <Route path='/social_network/users' element={<UsersContainer />}/>
               </Routes>
             </Main>
           </div>
