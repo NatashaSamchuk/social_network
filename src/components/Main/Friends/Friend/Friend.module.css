@@ -4,6 +4,7 @@
         border-radius: 15px;
         margin: 5px 10px;
         display: inline-block;
+        margin-top: 20px;
         /*position: relative;*/
 }
 
@@ -82,11 +83,19 @@
         color: #69a0ff;
         text-decoration: none;
         font-size: 22px;
-        display: block;
-        text-align: center;
-        padding: 10px 0;
+        display: inline-block;
+        padding: 5px 0;
+        width: 140px;
+        margin: 7px 0;
 }
 
+.friend a:hover{
+        background-color: #c4ddff;
+        color: white;
+        /*border: #c4ddff 1px solid;*/
+        border-radius: 15px;
+        box-sizing: border-box;
+}
 
 /*.message .imgContainer{*/
 /*    width: 70px;*/

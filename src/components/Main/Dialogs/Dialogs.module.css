@@ -1,16 +1,17 @@
 .dialogs{
     font-size: 18px;
-    background-color: lightcyan ;
-    width: 75%;
-    /*display: flex;*/
-    /*flex-direction: row;*/
+    /*background-color: lightcyan ;*/
+    /*width: 75%;*/
+    box-shadow: 3px 3px 7px #b9b9b9;
+    border-radius: 10px;
+    background-color: #c4ddff;
     display: grid;
-    grid-template-columns: minmax(200px, 15%) minmax(450px, 75%);
+    grid-template-columns: minmax(200px, 15%) 1fr;
 }
 
 .dialogs .dialogUsers{
-    /*width: 15%;*/
-    background-color: rgb(170, 255, 255);
+    background-color:  #87b1ff;
+    border-radius: 10px 0 0 10px;
     padding-bottom: 15px;
 }
 
@@ -19,18 +20,20 @@
     padding: 0 0 0 10px;
 }
 
-.dialogs .messages textarea{
-    margin: 30px 0 30px 30%;
-    font-size: 18px;
-    width: 45%;
-    border-radius: 13px;
-}
 
-.dialogs .messages button{
-    font-size: 14px;
-    background-color: rgb(170, 255, 255);
-    border: lightgrey solid 1px;
-    padding: 7px;
-    border-radius: 13px;
-    margin-bottom: 20px;
-}
+
+/*.dialogs .messages textarea{*/
+/*    margin: 30px 0 30px 30%;*/
+/*    font-size: 18px;*/
+/*    width: 45%;*/
+/*    border-radius: 13px;*/
+/*}*/
+
+/*.dialogs .messages button{*/
+/*    font-size: 14px;*/
+/*    background-color: rgb(170, 255, 255);*/
+/*    border: lightgrey solid 1px;*/
+/*    padding: 7px;*/
+/*    border-radius: 13px;*/
+/*    margin-bottom: 20px;*/
+/*}*/

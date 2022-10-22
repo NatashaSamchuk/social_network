@@ -1,8 +1,12 @@
 .section{
     font-size: 25px;
-    background-color: rgb(204, 252, 204);
     padding-top: 10px;
-    width: 75%;
+    box-shadow: 3px 3px 7px #b9b9b9;
+    border-radius: 10px;
+    background-color: #c4ddff;
+    width: 100%;
+    overflow-x: auto;
+    max-height: calc(100vh - 434px);
 }
 
 .section textarea{
@@ -15,7 +19,7 @@
 .section button{
     margin-bottom: 25px;
     font-size: 14px;
-    background-color: rgb(166, 247, 166);
+    background-color: #87b1ff;
     border: lightgrey solid 1px;
     padding: 7px;
     border-radius: 13px;

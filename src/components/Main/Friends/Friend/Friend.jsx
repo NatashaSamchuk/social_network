@@ -20,8 +20,8 @@ const Friend = (props) => {
                 <p>{props.from}</p>
             </div>
             <span><b>Friends:</b> {props.friends}</span>
-            <span><b>Fotos:</b> {props.numberFoto}</span>
-            <span><b>Fotos:</b> {props.numberVideo}</span>
+            <span><b>Photos:</b> {props.numberFoto}</span>
+            <span><b>Videos:</b> {props.numberVideo}</span>
             <NavLink to = {path}>Message</NavLink>
         </div>
     )

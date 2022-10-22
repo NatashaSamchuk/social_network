@@ -1,9 +1,8 @@
 .main{
-    display: flex;
-    flex-direction: row;
     width: 100%;
-    /* display: grid; */
-    /* grid-template-columns: 25% 75%; */
+     display: grid;
+     grid-template-columns: minmax(300px, 350px) 1fr;
     font-size: 25px;
-    /* margin: 0 5%; */
+    min-height: calc(100vh - 424px);
+    padding-bottom: 20px;
 }

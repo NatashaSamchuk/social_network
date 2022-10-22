@@ -35,7 +35,7 @@
 .post .postItemContainer{
     display: grid;
     grid-template-columns: 1fr 70px;
-    background-color: rgb(166, 247, 166);
+    background-color: #87b1ff;
     border-radius: 20px;
     min-height: 80px;
 }
@@ -70,5 +70,5 @@
     margin: 0 10px 10px 0;
     min-width: 58px;
     position: relative;
-    background-color: rgb(204, 252, 204);
+    background-color: #c4ddff;
 }

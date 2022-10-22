@@ -1,41 +1,20 @@
-.message{
-    margin: 18px 0 0 10px;
-    display: grid;
-    grid-template-columns: 70px 1fr;
-    margin-right: 15px;
+.messageUser textarea{
+    margin: 30px 0 30px 30%;
+    font-size: 18px;
+    width: 45%;
+    border-radius: 13px;
 }
 
-.message .imgContainer{
-    width: 70px;
-    height: 70px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 35px;
+.messageUser button{
+    font-size: 14px;
+    /*background-color: rgb(170, 255, 255);*/
+    background-color: #87b1ff;
+    border: lightgrey solid 1px;
+    padding: 7px;
+    border-radius: 13px;
+    margin-bottom: 20px;
 }
-
-.message .imgContainer img{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 100%;
-    object-fit: cover;
-}
-
-.message .messageContainer{
-    margin-left: 20px;
-    background-color: rgb(170, 255, 255);
-    border-radius: 20px;
-    padding: 7px 0 7px 10px;
-}
-
-.message .messageContainer .timeContainer{
-    font-size: 15px;
-    padding: 7px 0 0 10px;
-}
-
-.m{
-    background-color: rgb(170, 255, 255);
-    border-radius: 20px;
+.messageUser{
+    overflow-x: auto;
+    max-height: calc(100vh - 434px);
 }

@@ -25,7 +25,8 @@
 
 .message .messageContainer{
     margin-left: 20px;
-    background-color: rgb(170, 255, 255);
+    /*background-color: rgb(170, 255, 255);*/
+    background-color:  #87b1ff;
     border-radius: 20px;
     padding: 7px 0 7px 10px;
 }
@@ -35,7 +36,3 @@
     padding: 7px 0 0 10px;
 }
 
-.m{
-    background-color: rgb(170, 255, 255);
-    border-radius: 20px;
-}

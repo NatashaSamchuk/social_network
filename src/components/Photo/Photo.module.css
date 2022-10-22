@@ -1,6 +1,6 @@
 .imgBackground{
     width: 90%;
-    height: 300px;
+    height: 350px;
     position: relative;
     overflow: hidden;
     margin: 0 5%;
@@ -14,6 +14,7 @@
     transform: translate(-50%,-50%);
     height: 100%;
     object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 
 .photo{
@@ -22,7 +23,7 @@
 
 .fase{
     position: absolute;
-    top: 70px;
+    top: 120px;
     /* left: 150px; */
     left: 7%;
     width: 250px;

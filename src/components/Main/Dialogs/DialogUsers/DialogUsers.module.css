@@ -1,5 +1,7 @@
 .dialogUsersContainer .active{
-    background-color: lightcyan;
+    /*background-color: lightcyan;*/
+    background-color: #c4ddff;
+    border-radius: 10px 0 0 10px;
 }
 
 .dialogUsersContainer{
@@ -7,6 +9,8 @@
     grid-template-columns: 70px 1fr;
     align-items: center;
     margin: 10px 0 0 15px;
+    overflow-x: auto;
+    max-height: calc(100vh - 434px);
 }
 
 .dialogUsersContainer .userFotoContainer{
@@ -32,5 +36,5 @@
     margin: 6px 0 0 20px;
     text-decoration: none;
     color: black;
-    padding: 6px 5px;
+    padding: 8px 7px;
 }

@@ -3,7 +3,6 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import Nav from "./components/Nav/Nav";
-// import Photo from "./components/Photo/Photo";
 import {Routes, Route} from "react-router-dom";
 import DialogsContainer from "./components/Main/Dialogs/DialogsContainer";
 import InfoContainer from "./components/Main/Info/InfoContainer";
@@ -11,6 +10,8 @@ import FriendsContainer from "./components/Main/Friends/FriendsContainer";
 import Section from "./components/Main/Section/Section";
 import UsersContainer from "./components/Main/Users/UsersContainer";
 import PhotoContainer from "./components/Photo/PhotoContainer";
+import Videos from "./components/Main/Videos/Videos";
+import Photos from "./components/Main/Photos/Photos";
 
 function App(props) {
 
@@ -26,14 +27,14 @@ function App(props) {
                   <Route exact path="/social_network" element = {<Section />}/>
                   <Route path="/social_network/profile" element = {<Section />}/>
                   <Route exact path="/social_network/dialogs/*" element = {<DialogsContainer />}/>
-                {/*<Route path="/videos" element = {<Videos/>}/>*/}
-                {/*<Route path="/photos" element = {<Fotos/>}/>*/}
+                  <Route path="/social_network/videos" element = {<Videos/>}/>
+                  <Route path="/social_network/photos" element = {<Photos/>}/>
                   <Route path="/social_network/friends" element = {<FriendsContainer/>}/>
                   <Route path='/social_network/users' element={<UsersContainer />}/>
               </Routes>
             </Main>
           </div>
-          <Footer/>
+          {/*<Footer/>*/}
         </div>
   );
 }

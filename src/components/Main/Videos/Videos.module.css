@@ -1,6 +1,9 @@
 .videos{
-    font-size: 25px;
-    background-color: lightpink;
-    width: 75%;
-    padding: 30px 0 0 10px;
+    /*width: 75%;*/
+    text-align: center;
+    box-shadow: 3px 3px 7px #b9b9b9;
+    border-radius: 10px;
+    background-color: #c4ddff;
+    overflow-x: auto;
+    max-height: calc(100vh - 434px);
 }

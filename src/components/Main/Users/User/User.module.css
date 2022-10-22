@@ -1,11 +1,12 @@
 .user {
     display: flex;
     margin: 2% 10%;
-    background-color: #ffc8d2;
+    /*background-color: #ffc8d2;*/
     padding: 10px;
     border-radius: 20px;
     justify-content: space-around;
     align-items: center;
+    background-color: #87b1ff;
 }
 
 .user .userImgContainer{
@@ -30,7 +31,8 @@
 .user button {
     height: 40px;
     font-size: 14px;
-    background-color: lavenderblush;
+    /*background-color: lavenderblush;*/
+    background-color: #c4ddff;
     border: lightgrey solid 1px;
     padding: 7px;
     border-radius: 13px;
