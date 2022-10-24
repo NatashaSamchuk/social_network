@@ -13,7 +13,14 @@
     padding: 7px;
     border-radius: 13px;
     margin-bottom: 20px;
+
 }
+
+.messageUser button:hover{
+    cursor: pointer;
+    transform: scale(1.035);
+}
+
 .messageUser{
     overflow-x: auto;
     max-height: calc(100vh - 434px);

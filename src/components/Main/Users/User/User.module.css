@@ -38,3 +38,8 @@
     border-radius: 13px;
     width: 70px;
 }
+
+.user button:hover{
+    cursor: pointer;
+    transform: scale(1.035);
+}

@@ -24,3 +24,8 @@
     padding: 7px;
     border-radius: 13px;
 }
+
+.section button:hover{
+    cursor: pointer;
+    transform: scale(1.035);
+}

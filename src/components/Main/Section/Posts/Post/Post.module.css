@@ -40,6 +40,10 @@
     min-height: 80px;
 }
 
+.post .postIte{
+    border: solid 1px red;
+}
+
 .post .postItemContainer p{
     padding-left: 20px;
     font-size: 18px;

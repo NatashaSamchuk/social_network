@@ -6,6 +6,7 @@ import infoReducer from "./infoReducer";
 import friendsReducer from "./friendsReducer";
 import usersReducer from "./usersReducer";
 import photoReducer from "./photoReducer";
+import loginReducer from "./loginReducer";
 
 //state как обьект, параметры состояния, редакс создаст обьект состояния как был state, у него будут свойства и методы, которые мы передадим
 let reducers = combineReducers({
@@ -15,7 +16,8 @@ let reducers = combineReducers({
     infoPage: infoReducer,
     friendsPage: friendsReducer,
     usersPage: usersReducer,
-    photoPage: photoReducer
+    photoPage: photoReducer,
+    loginPage: loginReducer
 });
 
 let store = createStore(reducers);
