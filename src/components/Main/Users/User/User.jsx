@@ -33,9 +33,9 @@ let User = (props) => {
         <div className={style.usersWrapper}>
             <div className={style.user}>
                 <div className={style.userImgContainer}>
-                    {/*<NavLink to={'/social_network/profile/' + props.id}>*/}
+                    <NavLink to={'/social_network/profileUser/' + props.id}>
                         <img src={props.foto} alt="photo"/>
-                    {/*</NavLink>*/}
+                    </NavLink>
                 </div>
                 <div>{props.name}</div>
                 <div>{props.followed}</div>

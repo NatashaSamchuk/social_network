@@ -13,6 +13,8 @@ import PhotoContainer from "./components/Photo/PhotoContainer";
 import Videos from "./components/Main/Videos/Videos";
 import Photos from "./components/Main/Photos/Photos";
 import HeaderContainer from "./components/Header/HeaderContainer";
+import ProfileUsers from "./components/Main/ProfileUsers/ProfileUsers";
+
 
 function App(props) {
 
@@ -29,7 +31,7 @@ function App(props) {
               <InfoContainer/>
               <Routes>
                   <Route exact path="/social_network" element = {<Section />}/>
-                  {/*<Route path="/social_network/profile/:userId" element = {<Section />}/>*/}
+                  <Route path="/social_network/profileUser/:userId" element = {<ProfileUsers />}/>
                   <Route path="/social_network/profile" element = {<Section />}/>
                   <Route exact path="/social_network/dialogs/*" element = {<DialogsContainer />}/>
                   <Route path="/social_network/videos" element = {<Videos/>}/>

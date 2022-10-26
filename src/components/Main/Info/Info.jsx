@@ -7,7 +7,9 @@ const Info = (props) => {
     return (
         <div className={style.info}>
             <h2>Personal information</h2>
-             {infoItem}
+            <div className={style.infoContainerFlex}>
+                {infoItem}
+            </div>
         </div>
     )
 };

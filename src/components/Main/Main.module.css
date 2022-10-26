@@ -3,6 +3,13 @@
      display: grid;
      grid-template-columns: minmax(300px, 350px) 1fr;
     font-size: 25px;
-    min-height: calc(100vh - 424px);
+    /*max-height: calc(100vh - 424px);*/
     padding-bottom: 20px;
+}
+
+@media (max-width: 1000px){
+    .main{
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
 }

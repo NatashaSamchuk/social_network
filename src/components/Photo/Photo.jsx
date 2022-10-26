@@ -1,7 +1,6 @@
 import React from "react";
 import style from './Photo.module.css';
-// import img from "./img/beach.jpg"
-// import fase from "./img/yana.jpg"
+
 
 const Photo = (props) => {
     return(

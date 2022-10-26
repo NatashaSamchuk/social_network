@@ -14,7 +14,11 @@ let initialState = {
     isAuth: true,
     photo: myPhoto,
     logo: logo,
-    img: [{img: home, nav: "/social_network/profile"}, {img: message, nav: "/social_network/dialogs"},{img: friends, nav: "/social_network/friends"}, {img: video, nav: "/social_network/videos"}, {img: camera, nav: "/social_network/photos"}]
+    img: [{id: 1, img: home, nav: "/social_network/profile"},
+        {id: 2, img: message, nav: "/social_network/dialogs"},
+        {id: 3, img: friends, nav: "/social_network/friends"},
+        {id: 4, img: video, nav: "/social_network/videos"},
+        {id: 5, img: camera, nav: "/social_network/photos"}]
     //залогинен?
 };
 

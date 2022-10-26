@@ -1,5 +1,6 @@
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+const SET_USER_PROFILE = "SET_USER_PROFILE";
 
 
 let initialState =  {
@@ -11,6 +12,7 @@ let initialState =  {
         {key: 1, post: "These computer mediated interactions link members of various networks and may help to create, sustain and develop new social and professional relationships.", likeCount: 11}
     ],
     newPostText: ''
+    // profile: ''
 }
 
 
@@ -40,6 +42,13 @@ const profileReducer = (state = initialState, action) => {
                 ...state,
                 newPostText: action.newText
             };
+        case SET_USER_PROFILE: {
+            // console.log(action.profile)
+            return {
+                ...state,
+                profile: action.profile
+            }
+        }
         default:
             return state;
     }
@@ -55,6 +64,8 @@ export const updateNewPostTextActionCreator = (text) => {
         newText: text
     }
 }
+
+export const setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile})
 
 
 

@@ -6,7 +6,7 @@ import {NavLink} from "react-router-dom";
 
 
 const Header = (props) => {
-    let imgItem = props.loginPage.img.map(img =>  <NavLink to={img.nav}><img className={style.img} src={img.img} alt={"img"}/></NavLink> );
+    let imgItem = props.loginPage.img.map(img =>  <NavLink to={img.nav} key = {img.id}><img className={style.img} src={img.img} alt={"img"}/></NavLink> );
     return(
         <header className={style.header}>
             <div className={style.logoContainer}>

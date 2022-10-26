@@ -5,5 +5,15 @@
     border-radius: 10px;
     background-color: #c4ddff;
     overflow-x: auto;
-    max-height: calc(100vh - 434px);
+    /*max-height: calc(100vh - 434px);*/
+    height: calc(100vh - 434px);
+    min-height: 476px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1000px){
+    .videos{
+        height: calc(100vh - 763px);
+        min-height: 620px;
+    }
 }

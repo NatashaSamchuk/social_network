@@ -2,12 +2,11 @@ import React from "react";
 import style from './Section.module.css';
 // import Pasts from './Posts/Posts'
 import PostsContainer from "./Posts/PostsContainer";
-// import ProfileUserContainer from "./ProfileUser/ProfileUserContainer";
-// import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../Redux/profileReducer";
 
 
 
-const Section = (props) => {
+
+const Section = () => {
 
 
     // let a = "/at.png";
@@ -15,7 +14,6 @@ const Section = (props) => {
 
     return(
         <section className={style.section}>
-            {/*<ProfileUserContainer/>*/}
             <PostsContainer />
         </section>
     )

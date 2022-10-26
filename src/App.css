@@ -1,9 +1,18 @@
 .wraper {
   /* text-align: center; */
   background-color: lightgray;
+  height: 100vh;
+  min-height: 900px;
 }
 
 .wraper .container{
   width: 90%;
   margin: 0 5%;
+}
+
+@media (max-width: 1000px){
+  .wraper {
+    /*height: calc(100vh + 505px);*/
+    min-height: 1390px;
+  }
 }

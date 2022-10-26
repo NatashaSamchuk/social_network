@@ -8,12 +8,12 @@
         /*position: relative;*/
 }
 
-.friend .frendCard{
+.friend .link .frendCard{
         position: relative;
         margin-bottom: 20px;
 }
 
-.friend .frendCard .friendBackgroundImg{
+.friend .link .frendCard .friendBackgroundImg{
         width: 100%;
         height: 150px;
         position: relative;
@@ -21,7 +21,7 @@
         border-radius: 15px 15px 0 0;
 }
 
-.friend .frendCard .friendBackgroundImg img{
+.friend .link .frendCard .friendBackgroundImg img{
         width: 100%;
         position: absolute;
         top: 50%;
@@ -31,21 +31,22 @@
         object-fit: cover;
 }
 
-.friend .frendCard .friendFoto{
+.friend .link .frendCard .friendFoto{
         position: absolute;
         left: 12px;
         top: 75px;
         width: 84px;
 }
 
-.friend .frendCard .friendFoto .positionFoto{
+.friend .link .frendCard .friendFoto .positionFoto{
         width: 100%;
         height: 84px;
         position: relative;
         overflow: hidden;
+        border-radius: 42px;
 }
 
-.friend .frendCard .friendFoto .positionFoto img{
+.friend .link .frendCard .friendFoto .positionFoto img{
         width: 100%;
         position: absolute;
         top: 50%;
@@ -55,14 +56,14 @@
         object-fit: cover;
 }
 
-.friend .frendCard h4{
+.friend .link .frendCard h4{
         color: white;
         position: absolute;
         left: 110px;
         top: 75px;
 }
 
-.friend .frendCard p{
+.friend .link .frendCard p{
         /*color: white;*/
         position: absolute;
         left: 110px;
@@ -79,7 +80,7 @@
         text-align: left;
 }
 
-.friend a{
+.friend .linkButton{
         color: #69a0ff;
         text-decoration: none;
         font-size: 22px;
@@ -89,7 +90,7 @@
         margin: 7px 0;
 }
 
-.friend a:hover{
+.friend .linkButton:hover{
         background-color: #c4ddff;
         color: white;
         /*border: #c4ddff 1px solid;*/

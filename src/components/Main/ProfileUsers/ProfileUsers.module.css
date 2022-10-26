@@ -1,6 +1,5 @@
-.friends{
-    /*width: 75%;*/
-    text-align: center;
+.profileUsers{
+    /*text-align: center;*/
     box-shadow: 3px 3px 7px #b9b9b9;
     border-radius: 10px;
     background-color: #c4ddff;
@@ -8,13 +7,25 @@
     /*max-height: calc(100vh - 434px);*/
     /*background-color: #b4d3ff;*/
     height: calc(100vh - 434px);
+    display: grid;
+    grid-template-columns: 1fr minmax(350px, 400px);
     min-height: 476px;
     box-sizing: border-box;
 }
 
-@media (max-width: 1000px){
-    .friends{
-        height: calc(100vh - 763px);
-        min-height: 620px;
+@media (max-width: 1580px){
+    .profileUsers{
+        /*height: calc(100vh - 763px);*/
+        /*min-height: 620px;*/
+        grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 1000px){
+    .profileUsers{
+        height: calc(100vh - 763px);
+        min-height: 620px;
+        /*grid-template-columns: 1fr;*/
+    }
+}
+

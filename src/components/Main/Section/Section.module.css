@@ -6,7 +6,12 @@
     background-color: #c4ddff;
     width: 100%;
     overflow-x: auto;
-    max-height: calc(100vh - 434px);
+    /*height: 100%;*/
+    /*height: calc(100%-10px);*/
+    /*max-height: calc(100vh - 434px);*/
+    height: calc(100vh - 434px);
+    min-height: 476px;
+    box-sizing: border-box;
 }
 
 .section textarea{
@@ -28,4 +33,11 @@
 .section button:hover{
     cursor: pointer;
     transform: scale(1.035);
+}
+
+@media (max-width: 1000px){
+    .section{
+        height: calc(100vh - 763px);
+        min-height: 620px;
+    }
 }
